@@ -19,7 +19,7 @@ def start_conversation():
     thread = client.beta.threads.create(
       tool_resources={
         "file_search": {
-          "vector_store_ids": ["vs_B6hcEBIg0B3fYTlcZtlVNguU"]
+          "vector_store_ids": ["vs_fazMFBmTz9d6XS6gugVUYM3J"]
         }
       }
     )
