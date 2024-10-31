@@ -6,7 +6,7 @@ from openai import OpenAI
 
 # Set your OpenAI API key and the Assistant ID you want to use
 OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
-ASSISTANT_ID = "asst_90WTwI83NI6qrLLNvqeSSJ7H" 
+ASSISTANT_ID = "asst_v2pbJtHtFN9mcZYSC1cDDymU" 
 app = Flask(__name__)
 client = OpenAI(api_key=OPENAI_API_KEY)
 assistant = client.beta.assistants.retrieve(assistant_id=ASSISTANT_ID)
@@ -19,7 +19,7 @@ def start_conversation():
     thread = client.beta.threads.create(
       tool_resources={
         "file_search": {
-          "vector_store_ids": ["vs_fazMFBmTz9d6XS6gugVUYM3J"]
+          "vector_store_ids": ["vs_B6hcEBIg0B3fYTlcZtlVNguU"]
         }
       }
     )
